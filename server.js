@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URL || "mongodb://localhost/budget";
+var MONGODB_URI = process.env.MONGODB_URL || "mongodb://localhost/budget";
 
 const options = {
 	useNewUrlParser: true,
